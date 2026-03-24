@@ -27,6 +27,36 @@
     cursor: none;
   }
 
+  /* PROFILE IMAGE */
+.profile-wrap {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.profile-img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--gold);
+}
+
+/* TOOL LOGOS */
+.tool-chip img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.75;
+  transition: all .25s;
+}
+
+.tool-chip:hover img {
+  filter: none;
+  opacity: 1;
+}
   /* grain */
   body::after {
     content: ''; position: fixed; inset: 0; pointer-events: none; z-index: 9000;
@@ -264,7 +294,10 @@
   <div class="hero-vline"></div>
   <div class="hero-content">
     <div class="hero-tag">AI Storyteller &amp; Visual Creator</div>
-    <h1 class="hero-name">Gorish<em>Soni</em></h1>
+   <div class="profile-wrap">
+  <img src="https://github.com/gorishsoni101.png" class="profile-img" alt="Gorish Soni">
+  <h1 class="hero-name">Gorish<em>Soni</em></h1>
+</div>
     <p class="hero-bio">A storyteller shaped by many perspectives — psychology, imagination, and the characters that influenced how I see the world. I craft narratives that live at the intersection of emotion and technology.</p>
     <div class="hero-cta">
       <a href="#work" class="btn-primary">↓ Watch My Film</a>
